@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shop Main</title>
+        <link rel="stylesheet" href="shop.css">
+    </head>
+    <body>
+        <button onclick="location.href = 'cart.html'" class="goToCart">
+            Cart
+        </button>
+
+        <div id="cartAddedSign">
+            Added !
+        </div>
+
+        <div class="mainListCon">  <!--구분하기위해 id_1 사용-->
+            <div class="mainItemIntro">
+                <img id="mainItemImg_addToCart_1" class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
+                <span id="mainItemName_addToCart_1" class="mainItemName">Tshirt 1</span>
+                <span id="mainItemIntroSpan_addToCart_1" class="mainItemIntroSpan">Introduction of Item</span>
+                <button onclick="displayAddedSign(), addToCartPage(this.id)" id="addToCart_1" class="addToCart">Add To Cart</button>
+            </div>
+            <div class="mainItemIntro">
+                <img class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
+                <span class="mainItemName">Tshirt 2</span>
+                <span class="mainItemIntroSpan">Introduction of Item</span>
+            </div>
+            <div class="mainItemIntro">
+                <img class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
+                <span class="mainItemName">Tshirt 3</span>
+                <span class="mainItemIntroSpan">Introduction of Item</span>
+            </div>
+        </div>
+
+        <script src="shop.js"></script>
+    </body>
+</html>

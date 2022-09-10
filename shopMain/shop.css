@@ -1,0 +1,57 @@
+.mainItemImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.mainItemIntroSpan {
+    display: block;
+    position: relative;
+    bottom: 100px;
+    left: 160px;
+    width: 200px;
+}
+
+.mainItemName {
+    position: relative;
+    left: 4.5px;
+    bottom: 100px;
+}
+
+.mainListCon {
+    background-color: rgb(218, 191, 243);
+    position: absolute;
+    left: 33%;
+    right: 33%;
+    padding: 10px 10px;
+}
+
+.addToCart {
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+}
+
+.goToCart {
+    position: absolute;
+    left: 1700px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+#cartAddedSign {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 5px 5px;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 1670px;
+    top: 90px;
+    display: none;
+}
