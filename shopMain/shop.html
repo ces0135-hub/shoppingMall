@@ -11,26 +11,32 @@
         </button>
 
         <div id="cartAddedSign">
-            Added !
+            <span id="addedTxt">Added !</span>
         </div>
 
         <div class="mainListCon">  <!--구분하기위해 id_1 사용-->
             <div class="mainItemIntro">
                 <img id="mainItemImg_addToCart_1" class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
                 <span id="mainItemName_addToCart_1" class="mainItemName">Tshirt 1</span>
-                <span id="mainItemIntroSpan_addToCart_1" class="mainItemIntroSpan">Introduction of Item</span>
-                <button onclick="displayAddedSign(), addToCartPage(this.id)" id="addToCart_1" class="addToCart">Add To Cart</button>
+                <span id="mainItemIntroSpan_addToCart_1" class="mainItemIntroSpan">Introduction of Tshirt 1</span>
+                <button onclick="displayAddedSign(), sendToCartPage(this.id)" id="addToCart_1" class="addToCart">Add To Cart</button>
             </div>
             <div class="mainItemIntro">
-                <img class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
-                <span class="mainItemName">Tshirt 2</span>
-                <span class="mainItemIntroSpan">Introduction of Item</span>
+                <img id="mainItemImg_addToCart_2" class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
+                <span id="mainItemName_addToCart_2" class="mainItemName">Tshirt 2</span>
+                <span id="mainItemIntroSpan_addToCart_2" class="mainItemIntroSpan">Introduction of Tshirt 2</span>
+                <button onclick="displayAddedSign(), sendToCartPage(this.id)" id="addToCart_2" class="addToCart">Add To Cart</button>
             </div>
             <div class="mainItemIntro">
-                <img class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
-                <span class="mainItemName">Tshirt 3</span>
-                <span class="mainItemIntroSpan">Introduction of Item</span>
+                <img id="mainItemImg_addToCart_3" class="mainItemImg" src="https://donbb.com/wp-content/uploads/2018/08/tshirt-2.jpg">
+                <span id="mainItemName_addToCart_3" class="mainItemName">Tshirt 3</span>
+                <span id="mainItemIntroSpan_addToCart_3" class="mainItemIntroSpan">Introduction of Tshirt 3</span>
+                <button onclick="displayAddedSign(), sendToCartPage(this.id)" id="addToCart_3" class="addToCart">Add To Cart</button>
             </div>
+        </div>
+
+        <div class="showAddedItems">
+            <h1 style="margin-left: 10px;">Cart</h1>
         </div>
 
         <script src="shop.js"></script>

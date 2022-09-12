@@ -1,3 +1,7 @@
+body {
+    background-color: #f7f7f7;
+}
+
 .mainItemImg {
     width: 150px;
     height: 150px;
@@ -19,7 +23,7 @@
 }
 
 .mainListCon {
-    background-color: rgb(218, 191, 243);
+    background-color: white;
     position: absolute;
     left: 33%;
     right: 33%;
@@ -44,7 +48,7 @@
 #cartAddedSign {
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: rgb(247, 242, 204);
     padding: 5px 5px;
     width: 150px;
     border-radius: 10px;
@@ -54,4 +58,16 @@
     left: 1670px;
     top: 90px;
     display: none;
+}
+
+#addedTxt {
+    position: relative;
+    left: 50px;
+}
+
+.showAddedItems {
+    display: block;
+    background-color: white;
+    width: 30%;
+    justify-content: center;
 }
