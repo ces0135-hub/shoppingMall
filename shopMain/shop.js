@@ -1,14 +1,14 @@
 let addCartBtn = document.getElementsByClassName("addToCart")[0];
 let getAddedSign = document.getElementById("cartAddedSign");
 
-let cartClickCheck = 0;
+let cartBtn = document.getElementById("cartDisplayControl");
 let getCartDisplay = document.getElementsByClassName("showAddedItems")[0];
-function displayCart() {
-    if(cartClickCheck % 2 == 0) {
-        getCartDisplay.style.display = "none";
-    } else {
-        getCartDisplay.style.display = "block";
-    }
+function openCart() {
+    getCartDisplay.style.display = "block";
+}
+
+function closeCartBtn() {
+    getCartDisplay.style.display = "none";
 }
 
 function displayAddedSign() {
@@ -65,8 +65,6 @@ function sendToCartPage(thisId) {
     cartItemCon.appendChild(cartIntroCon);
 
     cartItemDisplay.appendChild(cartItemCon);
-
-    cartClickCheck++;
     //getAddedItem();
 }
 //localStorage를 이용한 데이터 전송 ?

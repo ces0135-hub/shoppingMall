@@ -6,8 +6,17 @@
         <link rel="stylesheet" href="shop.css">
     </head>
     <body>
-        <button onclick="location.href = 'cart.html'" class="goToCart">
-            Cart
+        <div id="mainBanner">
+            <h1>Shopping Mall</h1>
+        </div>
+
+        <div id="mainNavBar">
+            <button id="mainLogin">로그인</button>
+            <button id="mainRegister" style="margin-left: 15px;">회원가입</button>
+        </div>
+
+        <button id="cartDisplayControl" onclick="openCart()">
+            View Cart
         </button>
 
         <div id="cartAddedSign">
@@ -36,7 +45,8 @@
         </div>
 
         <div class="showAddedItems">
-            <h1 style="margin-left: 10px;">Cart</h1>
+            <h1 style="margin-left: 40%; font-style: italic;">Cart</h1>
+            <button id="closeCart" onclick="closeCartBtn()">Close</button>
         </div>
 
         <script src="shop.js"></script>
